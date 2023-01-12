@@ -1,10 +1,42 @@
-.swiper{
+.swiper {
   overflow: unset;
 }
 .header {
   padding: 100px 0;
   background: linear-gradient(90deg, white 65%, #293bdc 35%);
-  &__wrapper{
+  &--container {
+    @include display(center, space-between);
+    margin-bottom: 40px;
+  }
+  &__logo {
+    display: block;
+  }
+  &__wrap {
+    @include display(center, space-between);
+    gap: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__span {
+    @include display(center, center);
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__info {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  &__span a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    color: #ffffff;
+  }
+  &__wrapper {
     display: flex;
     align-items: center;
   }
@@ -29,5 +61,22 @@
     color: #000000;
     border: 4px solid #293bdc;
     border-radius: 10px;
+  }
+  &__black {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    top: 0px;
+    background: #000000;
+  }
+  &__toggle {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
