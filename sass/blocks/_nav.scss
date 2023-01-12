@@ -1,0 +1,33 @@
+.swiper{
+  overflow: unset;
+}
+.header {
+  padding: 100px 0;
+  background: linear-gradient(90deg, white 65%, #293bdc 35%);
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &__caption {
+    max-width: 710px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #293bdc;
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 577px;
+    margin-bottom: 80px;
+  }
+  &__link {
+    @include btn();
+    color: #000000;
+    border: 4px solid #293bdc;
+    border-radius: 10px;
+  }
+}
