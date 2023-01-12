@@ -1,0 +1,44 @@
+.firms{
+  padding: 150px 0;
+  &__wrapper{
+    @include display (center,space-between);
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .firms{
+    padding: 50px 0;
+    &__wrapper{
+      @include display (center,center);
+      flex-wrap: wrap;
+    }
+  }
+}
+@media only screen and (max-width:1120px) {
+  .firms{
+    padding: 50px 0;
+    &__wrapper{
+      @include display (center,center);
+      flex-wrap: wrap;
+    }
+    &__wrapper img{
+      width: 120px;
+    }
+  }
+}
+@media only screen and (max-width:767px) {
+  .firms{
+    padding: 50px 0;
+    &__wrapper{
+      @include display (center,center);
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    &__wrapper img{
+      width: 80px;
+    }
+  }
+}

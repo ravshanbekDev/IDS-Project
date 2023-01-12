@@ -1,0 +1,136 @@
+.goods {
+  padding: 150px 0;
+  background: #293bdc;
+  &__caption {
+    font-weight: 700;
+    font-size: 48px;
+    color: #ffffff;
+  }
+  &__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  &__wrapper {
+    @include display(center,space-between);
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+  }
+  &__card {
+    display: grid;
+    place-items: center;
+  }
+  &__card_one {
+    position: relative;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 280px;
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+  }
+  &__card_two {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: #000000;
+    width: 280px;
+    border-radius: 10px;
+    height: 400px;
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__image {
+    width: 220px;
+  }
+  &__title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 60px;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+  }
+  &__info {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__headline {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__btn {
+    @include btn();
+    color: #ffffff;
+    background: #000000;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 60px;
+    &::before {
+      background: #000000;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #ffffff;
+      color: #293bdc;
+      &::before {
+        transform: translateX(calc(100% * (-6)));
+      }
+    }
+  }
+  &__line {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    width: 108px;
+    height: 3px;
+    border: #000000;
+    background: #000000;
+  }
+}
+.goods__card:hover .goods__card_one {
+  display: none;
+}
+.goods__card:hover .goods__card_two {
+  display: grid;
+}
+
+@media only screen and (max-width: 1090px) {
+  .goods {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .goods {
+    padding: 50px 0;
+    &__caption {
+      font-size: 28px;
+      text-align: center;
+    }
+    &__description {
+      text-align: center;
+    }
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
