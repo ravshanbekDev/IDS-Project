@@ -1577,4 +1577,344 @@ template {
     max-width: 1250px;
     margin: 100px 0;
   }
+}
+.prime {
+  background-image: url(../images/serverPrime.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.prime__wrapper {
+  position: relative;
+}
+.prime__logo {
+  margin-top: 50px;
+}
+.prime__wrap {
+  position: absolute;
+  width: 100px;
+  height: 80vh;
+  right: 0;
+  top: 0px;
+  background: #000000;
+}
+.prime--img {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .prime {
+    height: 40vh;
+  }
+  .prime__wrapper {
+    position: relative;
+  }
+  .prime__logo {
+    margin-top: 50px;
+    width: 100px;
+  }
+  .prime__wrap {
+    position: absolute;
+    width: 50px;
+    height: 40vh;
+    right: 0;
+    top: 0px;
+    background: #000000;
+  }
+  .prime--img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 50%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+.servers {
+  margin: 150px 0;
+}
+.servers__blue_box {
+  transform: translateY(-320px);
+  background: #293bdc;
+  padding: 80px;
+  width: 900px;
+  height: 220px;
+}
+.servers__headline {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+}
+.servers__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.servers__box {
+  display: grid;
+  place-items: center;
+  transition: all 0.8s ease;
+}
+.servers__box:hover .servers__card {
+  display: none;
+}
+.servers__box:hover .servers__card_black {
+  display: grid;
+}
+.servers__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 340px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid #293bdc;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+.servers__card_black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 345px;
+  height: 400px;
+  background: #000000;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 30px;
+  display: none;
+}
+.servers__description {
+  margin-top: 60px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000000;
+}
+.servers__caption {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.servers__info {
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+}
+.servers__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.servers__btn {
+  position: relative;
+  padding: 18px 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 1s ease;
+  background: transparent;
+  color: #ffffff;
+  background: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.servers__btn::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background: white;
+  bottom: -4px;
+  right: 30px;
+  transition: all 1s ease;
+}
+.servers__btn:hover {
+  background: #293bdc;
+  color: #ffffff;
+}
+.servers__btn:hover::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  transform: translateX(-470%);
+  bottom: -4px;
+}
+.servers__btn::before {
+  background: #000000;
+}
+.servers__btn:hover {
+  background: #ffffff;
+  color: #293bdc;
+}
+.servers__btn:hover::before {
+  transform: translateX(-850%);
+}
+.servers__card hr {
+  width: 108px;
+  height: 3px;
+  bottom: 0;
+  position: absolute;
+  background: #293bdc;
+}
+
+@media only screen and (max-width: 1024px) {
+  .servers__blue_box {
+    transform: translateY(-240px);
+    background: #293bdc;
+    padding: 40px;
+    width: 400px;
+    height: 120px;
+  }
+  .servers__headline {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .servers {
+    margin: 100px 0;
+  }
+  .servers__blue_box {
+    margin: 0 auto;
+    transform: translateY(0);
+    background: #293bdc;
+    padding: 25px;
+    width: 280px;
+    height: 80px;
+  }
+  .servers__headline {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  .servers__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .servers__box {
+    display: grid;
+    place-items: center;
+    transition: all 0.8s ease-in;
+  }
+  .servers__box:hover .servers__card {
+    cursor: pointer;
+    display: none;
+  }
+  .servers__box:hover .servers__card_black {
+    cursor: pointer;
+    display: grid;
+  }
+  .servers__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+    height: 400px;
+    background: #ffffff;
+    border: 1px solid #293bdc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+  }
+  .servers__card_black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+    height: 400px;
+    background: #000000;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 30px;
+    display: none;
+  }
+  .servers__description {
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+  }
+  .servers__caption {
+    font-size: 18px;
+  }
+  .servers__info {
+    font-size: 18px;
+  }
+  .servers__title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .servers__btn {
+    position: relative;
+    padding: 18px 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 1s ease;
+    background: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 16px 25px;
+    margin-top: 60px;
+  }
+  .servers__btn::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background: white;
+    bottom: -4px;
+    right: 30px;
+    transition: all 1s ease;
+  }
+  .servers__btn:hover {
+    background: #293bdc;
+    color: #ffffff;
+  }
+  .servers__btn:hover::before {
+    content: "";
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    transform: translateX(-470%);
+    bottom: -4px;
+  }
+  .servers__card hr {
+    width: 108px;
+    height: 3px;
+    bottom: 0;
+    position: absolute;
+    background: #293bdc;
+  }
 }/*# sourceMappingURL=main.css.map */
