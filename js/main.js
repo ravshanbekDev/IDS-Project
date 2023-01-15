@@ -4,4 +4,5 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 300,
   loop: true,
   centeredSlides: true,
+  autoplay: true,
 });
